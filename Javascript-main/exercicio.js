@@ -5,47 +5,44 @@ function calcularLetras(){
     let outResultado = document.getElementById("outResultado")
     
     // obtém os valores dos campos de edição da página
-    let palavra = inPalavra.value
-    
+    let palav = inPalavra.value
+    let palavra = palav.toUpperCase()  
     let vogal = 0
-    let consoante = ""
+    let consoante = 0
 
 
     // usar for pra calcular tabuada
-    for ( i = 0; i<=palavra.value.length; i++){
-       
-            switch(i){
+    for ( i in palavra){
 
-                case"A":
-                    vogal++
-                break
+        switch(palavra[i]){
 
-                case"E":
-                    vogal++
-                break
+            case"A":
+                vogal++
+            break
+
+            case"E":
+                vogal++
+            break
             
-                case"I":
-                    vogal++
-                break
+            case"I":
+                vogal++
+            break
 
-                case"O":
-                    vogal++
-                break
+            case"O":
+                vogal++
+            break
 
-                case"U":
-                    vogal++
-                break
+            case"U":
+                vogal++
+            break
 
-                default:
-                    consoante++
-                break
-            }
-
+            default:
+                consoante++
+            break
         }
-    }  
+    } 
     
-    outResultado.textContent += "Quantia de vogais: "+vogal+" Quania de consoantes "+consoante
-
+    outResultado.textContent = "Quantia de vogais: "+vogal+"\nQuantia de consoantes "+consoante+";  Quantia de caracteres: "+palavra.length
 }
 // referencia o botão no html
 let btResultado = document.getElementById("butaoCalcular")
