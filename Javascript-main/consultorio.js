@@ -41,7 +41,7 @@ frm.btnUrgencia.addEventListener("click", () => {
 
 frm.btnAtender.addEventListener("click", () =>{
     const nome = frm.inPaciente.value // obtem o nome do paciente
-    pacientes.shift(nome) //adiciona o nome do paciente no inicio
+    pacientes.shift(nome) //remove o nome do paciente no inicio
     console.log(pacientes)
     let lista = "" // string para concatenar pacientes
     pacientes.forEach((paciente, i)=>( lista += `${i + 1}. ${pacientes[i]} \n`))
