@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conultorio Odontologico</title>
+</head>
+<body>
+    <h1>Consultório Odontológico</h1>
+    <form>
+        <p>Paciente:
+            <input type="text" id="inPaciente" required autofocus> <!--require autofocus faz o cursor piscar no campo desejado -->
+            <input type="submit" value="Adiconar">
+            <input type="button" value="Urgência" id="btnUrgencia">
+            <input type="button" value="Atender" id="btnAtender">   
+        </p>
+    </form>
+    <h3>Em Atendimento:
+        <span></span> <!--Passa informação na tela-->
+    </h3>
+    <pre></pre> <!--Mostra arquivo em texto-->
+    <script src="consultorio.js"></script>
+</body>
+</html>
